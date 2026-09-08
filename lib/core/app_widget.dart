@@ -1,5 +1,6 @@
 import 'package:devquiz/core/themes/app_colors.dart';
 import 'package:devquiz/core/themes/app_text_styles.dart';
+import 'package:devquiz/screens/splash/splash_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -24,15 +25,7 @@ class AppWidget extends StatelessWidget {
         ),
       ),
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text(
-            "DevQuiz",
-            style: AppTextStyles.headingMd.copyWith(color: AppColors.white),
-          ),
-        ),
-        body: Center(child: Text("Home", style: AppTextStyles.headingMd)),
-      ),
+      home: SplashPage(),
     );
   }
 }

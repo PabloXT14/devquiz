@@ -43,9 +43,9 @@ class AppColors {
   static const Color orange500 = Color(0xFFE8891C);
 
   // Gradient Colors
-  static const linearGradient = LinearGradient(
+  static final linearGradient = LinearGradient(
     colors: [Color(0xFF57B6E5), Color(0xFF8257E5)],
-    stops: [0.0, 0.695],
-    transform: GradientRotation(2.13959913 * pi),
+    stops: [0.0, 1.0],
+    transform: GradientRotation(20 * pi / 180),
   );
 }
