@@ -1,9 +1,9 @@
-import 'package:devquiz/core/themes/app_colors.dart';
-import 'package:devquiz/core/themes/app_images.dart';
+import 'package:devquiz/app/theme/app_colors.dart';
+import 'package:devquiz/app/theme/app_images.dart';
 import 'package:flutter/material.dart';
 
-class SplashPage extends StatelessWidget {
-  const SplashPage({super.key});
+class SplashView extends StatelessWidget {
+  const SplashView({super.key});
 
   @override
   Widget build(BuildContext context) {
