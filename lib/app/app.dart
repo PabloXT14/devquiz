@@ -1,5 +1,5 @@
 import 'package:devquiz/app/theme/app_colors.dart';
-import 'package:devquiz/features/splash/presentation/splash_view.dart';
+import 'package:devquiz/features/home/presentation/home_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -24,7 +24,7 @@ class App extends StatelessWidget {
         ),
       ),
       debugShowCheckedModeBanner: false,
-      home: const SplashView(),
+      home: const HomeView(),
     );
   }
 }

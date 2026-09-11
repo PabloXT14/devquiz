@@ -14,6 +14,11 @@ class AppTextStyles {
     fontWeight: FontWeight.w600,
   );
 
+  static final headingMdRegular = GoogleFonts.notoSans(
+    fontSize: 20,
+    fontWeight: FontWeight.w400,
+  );
+
   static final headingSm = GoogleFonts.notoSans(
     fontSize: 18,
     fontWeight: FontWeight.w600,

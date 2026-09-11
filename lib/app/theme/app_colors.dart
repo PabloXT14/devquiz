@@ -21,6 +21,7 @@ class AppColors {
   // Shape Colors
   static const background = Color(0xFFF5F5FA);
   static const border = Color(0xFFE1E1E6);
+  static const stroke = Color(0xFF7149CD);
 
   // Purple Colors
   static const Color purple100 = Color(0xFFEBEBFC);
