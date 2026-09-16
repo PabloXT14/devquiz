@@ -44,6 +44,11 @@ class AppTextStyles {
     fontWeight: FontWeight.w400,
   );
 
+  static final bodyMdMedium = GoogleFonts.notoSans(
+    fontSize: 14,
+    fontWeight: FontWeight.w500,
+  );
+
   static final bodySm = GoogleFonts.notoSans(
     fontSize: 12,
     fontWeight: FontWeight.w400,
