@@ -1,6 +1,7 @@
 import 'package:devquiz/app/theme/app_colors.dart';
 import 'package:devquiz/features/home/presentation/widgets/app_bar/app_bar_widget.dart';
 import 'package:devquiz/features/home/presentation/widgets/level_button/level_button.dart';
+import 'package:devquiz/features/home/presentation/widgets/quiz_card/quiz_card.dart';
 import 'package:flutter/material.dart';
 
 class HomeView extends StatefulWidget {
@@ -55,7 +56,18 @@ class _HomeViewState extends State<HomeView> {
               ),
             ),
 
-            // CHALLENGES
+            // QUIZ CARDS
+            // Expanded(
+            //   child: GridView.count(
+            //     crossAxisCount: 2,
+            //     mainAxisSpacing: 16,
+            //     crossAxisSpacing: 16,
+
+            //     children: [QuizCard(), QuizCard(), QuizCard(), QuizCard()],
+            //   ),
+            // ),
+            Container(width: 180, child: QuizCard()),
+            Container(width: 180, child: QuizCard()),
           ],
         ),
       ),
