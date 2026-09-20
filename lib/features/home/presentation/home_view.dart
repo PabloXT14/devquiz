@@ -57,17 +57,23 @@ class _HomeViewState extends State<HomeView> {
             ),
 
             // QUIZ CARDS
-            // Expanded(
-            //   child: GridView.count(
-            //     crossAxisCount: 2,
-            //     mainAxisSpacing: 16,
-            //     crossAxisSpacing: 16,
-
-            //     children: [QuizCard(), QuizCard(), QuizCard(), QuizCard()],
-            //   ),
-            // ),
-            Container(width: 180, child: QuizCard()),
-            Container(width: 180, child: QuizCard()),
+            Expanded(
+              child: GridView.count(
+                crossAxisCount: 2,
+                mainAxisSpacing: 16,
+                crossAxisSpacing: 16,
+                mainAxisExtent: 188, // Height of each card
+                padding: const EdgeInsets.only(bottom: 64),
+                children: [
+                  QuizCard(),
+                  QuizCard(),
+                  QuizCard(),
+                  QuizCard(),
+                  QuizCard(),
+                  QuizCard(),
+                ],
+              ),
+            ),
           ],
         ),
       ),
