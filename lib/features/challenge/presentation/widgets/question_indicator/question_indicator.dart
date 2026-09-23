@@ -1,6 +1,8 @@
+import 'package:devquiz/core/widgets/progress_bar/progress_bar.dart';
+import 'package:flutter/material.dart';
+
 import 'package:devquiz/app/theme/app_colors.dart';
 import 'package:devquiz/app/theme/app_text_styles.dart';
-import 'package:flutter/material.dart';
 
 class QuestionIndicator extends StatelessWidget {
   const new({super.key});
@@ -28,17 +30,7 @@ class QuestionIndicator extends StatelessWidget {
             ],
           ),
 
-          SizedBox(
-            width: double.maxFinite,
-            height: 4,
-
-            child: LinearProgressIndicator(
-              value: 0.4,
-              backgroundColor: AppColors.border,
-              valueColor: AlwaysStoppedAnimation<Color>(AppColors.green500),
-              borderRadius: BorderRadius.circular(2),
-            ),
-          ),
+          ProgressBar(value: 0.3),
         ],
       ),
     );
