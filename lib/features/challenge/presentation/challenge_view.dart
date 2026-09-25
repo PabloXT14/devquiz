@@ -1,6 +1,9 @@
-import 'package:devquiz/app/theme/app_colors.dart';
-import 'package:devquiz/features/challenge/presentation/widgets/question_indicator/question_indicator.dart';
 import 'package:flutter/material.dart';
+
+import 'package:devquiz/app/theme/app_colors.dart';
+
+import 'package:devquiz/features/challenge/presentation/widgets/question_indicator/question_indicator.dart';
+import 'package:devquiz/features/challenge/presentation/widgets/quiz/quiz.dart';
 
 class ChallengeView extends StatefulWidget {
   const new({super.key});
@@ -18,7 +21,11 @@ class _ChallengeViewState extends State<ChallengeView> {
         preferredSize: const Size.fromHeight(100),
         child: QuestionIndicator(),
       ),
-      body: Container(child: Column(children: [])),
+      body: Container(
+        child: Column(
+          children: [Quiz(title: "O que o Flutter faz em sua totalidade?")],
+        ),
+      ),
     );
   }
 }
